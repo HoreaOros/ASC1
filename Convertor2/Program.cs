@@ -10,9 +10,37 @@ namespace Convertor2
     {
         static void Main(string[] args)
         {
-            int n = 458, baza = 16;
+            //int n = 458, baza = 16;
 
-            Console.WriteLine(Convert_10_b(n, baza));
+            //Console.WriteLine(Convert_10_b(n, baza));
+
+
+            string numar = "CAFEBABE";
+            int baza = 16;
+            Console.WriteLine(Convert_b_10(numar, baza));
+        }
+
+        private static long Convert_b_10(string numar, int baza)
+        {
+            long result = 0;
+
+            for (int i = 0; i < numar.Length; i++)
+            {
+                result = result * baza + Digit2Num(numar[i]);
+            }
+
+            return result;
+        }
+
+        private static long Digit2Num(char v)
+        {
+            long result = 0;
+            if (v >= '0' && v <= '9')
+                result = v - '0';
+            else if (v >= 'A' && v <= 'F')
+                result = v - 'A' + 10;
+
+            return result;
         }
 
         private static string Convert_10_b(int n, int baza)
