@@ -10,11 +10,14 @@ namespace ASC1
     {
         static void Main(string[] args)
         {
-            double f = 0.0;
+            float f = 0.0f;
 
             for (int i = 0; i < 1000000; i++)
             {
-                f += 0.001;
+                f += 0.001f;
+                Console.WriteLine(f);
+                if (i % 25 == 0)
+                    Console.ReadKey();
             }
 
             Console.WriteLine(f);
