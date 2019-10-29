@@ -15,9 +15,22 @@ namespace Convertor3
 
             //Console.WriteLine(Convert_10_b(n, baza));
 
-            string numar = "CAFEBABE";
-            int baza = 16;
-            Console.WriteLine(Convert_b_10(numar, 16));
+            //string numar = "CAFEBABE";
+            //int baza = 16;
+            //Console.WriteLine(Convert_b_10(numar, 16));
+            float f;
+
+            f = 1.0f / (2 * 0);
+
+            Console.WriteLine(f);
+            if (float.IsInfinity(f))
+            {
+                Console.WriteLine("Infinit");
+            }
+
+            f = 0.0f / 0.0f;
+            f += 10f;
+            Console.WriteLine(f);
 
         }
 
