@@ -68,11 +68,11 @@ namespace Convertor
 
         static void Main(string[] args)
         {
-            int n = 42;
+            int n =17;
 
-            //Console.WriteLine(Convert_10_b(n, 16));
+            Console.WriteLine(Convert_10_b(n, 3));
 
-            Console.WriteLine(Convert_b_10("100101", 2));
+            //Console.WriteLine(Convert_b_10("100101", 2));
         }
     }
 }
