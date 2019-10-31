@@ -13,6 +13,34 @@ namespace Convertor4
             int n = 255;
             int baza = 8;
             Console.WriteLine(Convert_10_b(n, baza));
+
+            string numar = "babe";
+            baza = 16;
+            Console.WriteLine(Convert_b_10(numar, baza));
+        }
+
+        private static int Convert_b_10(string numar, int baza)
+        {
+            int result = 0;
+            for (int i = 0; i < numar.Length; i++)
+            {
+                result = result * baza + Digit2Num(numar[i]);
+            }
+
+            return result;
+        }
+
+        private static int Digit2Num(char v)
+        {
+            v = char.ToUpper(v);
+            if (v >= '0' && v <= '9')
+            {
+                return v - '0';
+            }
+            else if (v >= 'A' && v <= 'Z')
+                return v - 'A' + 10;
+            else
+                return 0; // aici nu ar trebuie sa se ajunga??
         }
 
         private static string Convert_10_b(int n, int baza)
