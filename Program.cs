@@ -17,6 +17,17 @@ namespace ASC1
                 f += 0.001;
             }
 
+
+            float f1 = 0.0f;
+            float eps = 0.00001f;
+            f1 = 0.01f + 0.01f + 0.01f + 0.01f + 0.01f + 0.01f;
+
+            Console.WriteLine(f1);
+            if (Math.Abs(f1 - 0.06f) < eps)
+                Console.WriteLine("Egale");
+            else
+                Console.WriteLine("Nu sunt egale");
+
             Console.WriteLine(f);
         }
     }
