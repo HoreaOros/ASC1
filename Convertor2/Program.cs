@@ -10,13 +10,13 @@ namespace Convertor2
     {
         static void Main(string[] args)
         {
-            //int n = 458, baza = 16;
+            int n = 458, baza = 16;
 
-            //Console.WriteLine(Convert_10_b(n, baza));
+            Console.WriteLine(Convert_10_b(n, baza));
 
 
             string numar = "CAFEBABE";
-            int baza = 16;
+            baza = 16;
             Console.WriteLine(Convert_b_10(numar, baza));
         }
 
