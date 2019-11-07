@@ -78,8 +78,6 @@ namespace Convertor3
             }
 
             return sb.ToString();
-
-
         }
     }
 }
