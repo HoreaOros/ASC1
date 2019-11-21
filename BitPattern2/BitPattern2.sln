@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitPattern2", "BitPattern2.csproj", "{D60A5130-05C2-4D77-938B-4353E353A40C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D60A5130-05C2-4D77-938B-4353E353A40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60A5130-05C2-4D77-938B-4353E353A40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60A5130-05C2-4D77-938B-4353E353A40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60A5130-05C2-4D77-938B-4353E353A40C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A130D5C-BE5F-4C3E-B9EB-FDFAD649D3A6}
+	EndGlobalSection
+EndGlobal
