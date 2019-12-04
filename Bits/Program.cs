@@ -56,8 +56,11 @@ namespace Bits
             {
                 Console.WriteLine($"Position {pos} is {GetBit(instr, pos)}");
             }
-            
 
+
+            int low = 30, high = 31, value = 2;
+            SetBits(ref instr, low, high, value);
+            uint value =  GetValue(instr, low, high);
         }
 
         private static uint GetBit(uint instr, int pos)
